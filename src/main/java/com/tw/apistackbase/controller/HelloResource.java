@@ -12,12 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/hello")
 public class HelloResource {
-
     @GetMapping(path = "/{userName}")
     public ResponseEntity<String> getAll(@PathVariable String userName) {
-
         return ResponseEntity.ok("Hello:" + userName);
     }
-
-
 }
